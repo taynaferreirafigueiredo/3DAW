@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Falls Cars - Reserva</title>
+    <link rel="stylesheet" href="../css/reserva.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">Falls <span>Cars</span></div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="veiculos.html">Veículos</a>
+        <a href="reserva.html">Reserva</a>
+    </nav>
+
+    <button onclick="window.location.href='login.html'">Sair</button>
+
+</header>
+
+
+<section class="container">
+
+    <div class="box">
+
+        <h1>Nova Reserva</h1>
+        <p>Preencha os dados para alugar seu veículo</p>
+
+        <form id="reservaForm">
+
+            <label>Veículo selecionado</label>
+            <input type="text" id="veiculo" placeholder="Ex: SUV Premium" required>
+
+            <label>Data de retirada</label>
+            <input type="date" id="inicio" required>
+
+            <label>Data de devolução</label>
+            <input type="date" id="fim" required>
+
+            <label>Valor diário (R$)</label>
+            <input type="number" id="valor" placeholder="Ex: 200" required>
+
+            <div class="resultado">
+                <p>Total estimado: <span id="total">R$ 0</span></p>
+            </div>
+
+            <button type="submit">Confirmar Reserva</button>
+
+        </form>
+
+        <div id="msg"></div>
+
+    </div>
+
+</section>
+
+<script src="../js/reserva.js"></script>
+</body>
+</html>

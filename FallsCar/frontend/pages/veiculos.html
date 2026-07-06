@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Falls Cars - Veículos</title>
+    <link rel="stylesheet" href="../css/veiculos.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">Falls <span>Cars</span></div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="veiculos.html">Veículos</a>
+        <a href="reserva.html">Reservas</a>
+        <a href="#">Perfil</a>
+    </nav>
+
+    <button onclick="window.location.href='login.html'">Sair</button>
+
+</header>
+
+
+<section class="title">
+
+    <h1>Encontre seu veículo ideal</h1>
+    <p>Escolha, filtre e reserve em poucos cliques</p>
+
+</section>
+
+
+<section class="filters">
+
+    <input type="text" id="search" placeholder="Buscar veículo...">
+
+    <select id="filter">
+        <option value="todos">Todos</option>
+        <option value="economico">Econômico</option>
+        <option value="suv">SUV</option>
+        <option value="esportivo">Esportivo</option>
+    </select>
+
+</section>
+
+
+<section class="vehicles">
+
+    <div class="grid">
+
+        <div class="card economico">
+            <h3>Hatch Econômico</h3>
+            <p>Ideal para cidade</p>
+            <span>R$ 120/dia</span>
+            <button>Reservar</button>
+        </div>
+
+        <div class="card suv">
+            <h3>SUV Urbano</h3>
+            <p>Espaço e conforto</p>
+            <span>R$ 220/dia</span>
+            <button>Reservar</button>
+        </div>
+
+        <div class="card esportivo">
+            <h3>Esportivo V8</h3>
+            <p>Alta performance</p>
+            <span>R$ 450/dia</span>
+            <button>Reservar</button>
+        </div>
+
+        <div class="card suv">
+            <h3>SUV Premium</h3>
+            <p>Luxo e tecnologia</p>
+            <span>R$ 300/dia</span>
+            <button>Reservar</button>
+        </div>
+
+        <div class="card economico">
+            <h3>Compacto City</h3>
+            <p>Baixo consumo</p>
+            <span>R$ 100/dia</span>
+            <button>Reservar</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <p> 2026 Falls Cars - Todos os direitos reservados</p>
+</footer>
+
+<script src="../js/veiculos.js"></script>
+</body>
+</html>
